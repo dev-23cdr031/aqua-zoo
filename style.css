@@ -1,0 +1,859 @@
+/* ==========================================
+   PAVALAM INDUSTRIES
+   STYLE.CSS - PART 1
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7f8f5;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2E7D32;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#ddd;
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+header{
+    width:100%;
+    background:#14532d;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#fff;
+    padding:5px;
+}
+
+.logo h2{
+    color:white;
+    font-size:28px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD54F;
+}
+
+/* ==========================================
+   NAV BUTTONS
+========================================== */
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.loginBtn,
+.orderBtn{
+
+    text-decoration:none;
+    color:white;
+    padding:12px 24px;
+    border-radius:30px;
+    transition:.3s;
+    font-weight:600;
+
+}
+
+.loginBtn{
+
+    background:#1565C0;
+
+}
+
+.orderBtn{
+
+    background:#FB8C00;
+
+}
+
+.loginBtn:hover{
+
+    background:#0D47A1;
+    transform:translateY(-2px);
+
+}
+
+.orderBtn:hover{
+
+    background:#EF6C00;
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+    width:90%;
+    margin:60px auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+
+}
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.hero-content h1{
+
+    font-size:55px;
+    color:#14532d;
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+    line-height:32px;
+    margin-bottom:35px;
+
+}
+
+.exploreBtn{
+
+    display:inline-block;
+    text-decoration:none;
+
+    background:#14532d;
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.exploreBtn:hover{
+
+    background:#2E7D32;
+    transform:scale(1.05);
+
+}
+
+.hero-image{
+
+    flex:1;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+/* ==========================================
+   PRODUCTS
+========================================== */
+
+#products{
+
+    padding:80px 8%;
+
+}
+
+#products h1{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#14532d;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:gray;
+
+    margin-top:15px;
+
+    margin-bottom:45px;
+
+}
+
+.products{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+}
+
+.products a{
+
+    text-decoration:none;
+
+    color:black;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.25);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.card h2{
+
+    text-align:center;
+
+    color:#14532d;
+
+    margin-top:20px;
+
+}
+
+.card p{
+
+    text-align:center;
+
+    padding:20px;
+
+    color:#555;
+
+}
+
+/* ==========================================
+   FEATURES
+========================================== */
+
+.features{
+
+    background:#14532d;
+
+    color:white;
+
+    padding:80px 8%;
+
+}
+
+.features h1{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:50px;
+
+}
+
+.feature-box{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+.feature-box div{
+
+    background:white;
+
+    color:#333;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.feature-box div:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.feature-box i{
+
+    font-size:45px;
+
+    color:#2E7D32;
+
+    margin-bottom:20px;
+
+}
+
+.feature-box h3{
+
+    margin-bottom:15px;
+
+    color:#14532d;
+
+}
+
+.feature-box p{
+
+    line-height:28px;
+
+}
+/* ==========================================
+   CUSTOMER REVIEWS
+========================================== */
+
+.reviews{
+    padding:80px 8%;
+    background:#f5f5f5;
+}
+
+.reviews h1{
+    text-align:center;
+    color:#14532d;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.review-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.review{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.review:hover{
+    transform:translateY(-10px);
+}
+
+.review h3{
+    color:#FFD700;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.review p{
+    color:#555;
+    line-height:28px;
+    margin-bottom:20px;
+}
+
+.review h4{
+    color:#14532d;
+}
+
+/* ==========================================
+   LOCATION
+========================================== */
+
+.location{
+    padding:80px 8%;
+    text-align:center;
+    background:white;
+}
+
+.location h1{
+    font-size:42px;
+    color:#14532d;
+    margin-bottom:20px;
+}
+
+.location p{
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:30px;
+}
+
+.location iframe{
+    width:100%;
+    height:450px;
+    border:0;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+    background:#0d3b20;
+    color:white;
+    padding:60px 8%;
+}
+
+.footer-content{
+    text-align:center;
+}
+
+.footer-content h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.footer-content p{
+    color:#ddd;
+    margin:10px 0;
+}
+
+.social{
+    margin:30px 0;
+}
+
+.social a{
+    color:white;
+    font-size:28px;
+    margin:0 15px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#FFD54F;
+    transform:scale(1.2);
+}
+
+/* ==========================================
+   FLOATING CHAT BUTTON
+========================================== */
+
+#chatBtn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:65px;
+    height:65px;
+    border:none;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    transition:.3s;
+    z-index:999;
+}
+
+#chatBtn:hover{
+    transform:scale(1.1);
+    background:#1EBE5D;
+}
+
+/* ==========================================
+   BACK TO TOP BUTTON
+========================================== */
+
+#topBtn{
+    position:fixed;
+    bottom:100px;
+    right:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#14532d;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    display:none;
+    transition:.3s;
+    z-index:998;
+}
+
+#topBtn:hover{
+    background:#2E7D32;
+}
+
+/* ==========================================
+   SIMPLE FADE ANIMATION
+========================================== */
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ==========================================
+   IMAGE HOVER EFFECT
+========================================== */
+
+img{
+    transition:.4s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+/* ==========================================
+   BUTTON EFFECT
+========================================== */
+
+button,
+.exploreBtn,
+.loginBtn,
+.orderBtn{
+    transition:all .3s ease;
+}
+
+button:hover,
+.exploreBtn:hover{
+    box-shadow:0 8px 18px rgba(0,0,0,.2);
+}
+
+/* ==========================================
+   SECTION SPACING
+========================================== */
+
+section{
+    scroll-margin-top:100px;
+}
+/* ==========================================
+   PAVALAM INDUSTRIES
+   STYLE.CSS - PART 3
+   Responsive Design & Utilities
+========================================== */
+
+/* Smooth transitions */
+
+*{
+    transition:0.3s ease;
+}
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width:992px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .hero-content p{
+        font-size:17px;
+    }
+
+    .hero-image img{
+        width:90%;
+    }
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .feature-box{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .review-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .loginBtn,
+    .orderBtn{
+        width:220px;
+        margin:auto;
+        text-align:center;
+    }
+
+    .hero{
+        padding:20px;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+        line-height:28px;
+    }
+
+    .hero-image img{
+        width:100%;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .feature-box{
+        grid-template-columns:1fr;
+    }
+
+    .review-container{
+        grid-template-columns:1fr;
+    }
+
+    .location iframe{
+        height:300px;
+    }
+
+    .footer-content h2{
+        font-size:26px;
+    }
+
+}
+
+/* ==========================================
+   SMALL DEVICES
+========================================== */
+
+@media (max-width:480px){
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .exploreBtn{
+        width:100%;
+        text-align:center;
+    }
+
+    .card img{
+        height:200px;
+    }
+
+    #chatBtn{
+        width:55px;
+        height:55px;
+        font-size:24px;
+    }
+
+    #topBtn{
+        width:50px;
+        height:50px;
+    }
+
+}
+
+/* ==========================================
+   UTILITIES
+========================================== */
+
+.text-center{
+    text-align:center;
+}
+
+.mt-20{
+    margin-top:20px;
+}
+
+.mt-40{
+    margin-top:40px;
+}
+
+.mb-20{
+    margin-bottom:20px;
+}
+
+.mb-40{
+    margin-bottom:40px;
+}
+
+/* ==========================================
+   SIMPLE LOADING ANIMATION
+========================================== */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.hero,
+.card,
+.review,
+.feature-box div{
+    animation:fadeIn 1s ease;
+}
+
+/* ==========================================
+   SELECTION COLOR
+========================================== */
+
+::selection{
+    background:#2E7D32;
+    color:white;
+}
+
+/* ==========================================
+   REMOVE BLUE TAP HIGHLIGHT (MOBILE)
+========================================== */
+
+a,
+button{
+    -webkit-tap-highlight-color:transparent;
+}
+
+/* ==========================================
+   END OF STYLE.CSS
+========================================== */
