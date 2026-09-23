@@ -14,13 +14,13 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.112.4",
     "@types/three": "^0.170.0",
-    "@vitejs/plugin-react": "latest",
-    "lucide-react": "latest",
-    "react": "latest",
-    "react-dom": "latest",
+    "@vitejs/plugin-react": "4.7.0",
+    "lucide-react": "1.34.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
     "three": "^0.170.0",
-    "typescript": "latest",
-    "vite": "latest"
+    "typescript": "7.0.2",
+    "vite": "6.4.3"
   },
   "devDependencies": {
     "@types/react": "^19.2.18",
