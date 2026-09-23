@@ -120,15 +120,14 @@ button {
   display: flex;
   align-items: center;
   height: 78px;
-  background: linear-gradient(180deg, rgba(3, 8, 19, 0.94), rgba(3, 8, 19, 0.65));
-  backdrop-filter: blur(16px);
+  background: #040a14;
   border-bottom: 1px solid var(--border);
   transition: height 0.3s ease, background 0.3s ease;
 }
 
 .site-header.scrolled {
   height: 64px;
-  background: rgba(3, 8, 19, 0.98);
+  background: #030813;
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
 }
 
@@ -433,12 +432,12 @@ button {
 
 @media (max-width: 1040px) {
   .nav { gap: 16px; }
-  .nav-links { display: none; }
-  .nav-cta { display: none; }
-  .nav-logout-btn { display: none; }
-  .nav-login-btn { display: none; }
-  .hamburger { display: flex; }
-  .mobile-menu { display: flex; }
+  .nav-links { display: none !important; }
+  .nav-cta { display: none !important; }
+  .nav-logout-btn { display: none !important; }
+  .nav-login-btn { display: none !important; }
+  .hamburger { display: flex !important; }
+  .mobile-menu { display: flex !important; }
 }
 
 /* =========================================
