@@ -319,14 +319,18 @@ button {
   display: none;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 10px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text);
+  background: rgba(0, 240, 255, 0.14);
+  border: 1.5px solid rgba(0, 240, 255, 0.55);
+  color: #ffffff;
   cursor: pointer;
-  transition: background 0.2s;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+  transition: background 0.2s, border-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .hamburger:hover {
